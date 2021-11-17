@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+	<div>
+		<button  onclick="myfunction();">Click Me</button>
+
+		<button onclick="namingConvention()">See Value</button>
+
+		<button onclick="stringConcat();">Show your name</button>
+		<button onclick="errorShow();">Show Me Error</button>
+		
+	</div>
+
+    
+</body>
+<script type="text/javascript">
+	/*Task 1 - declare variables, but assign values to those variables after declaration on the next line and show it on a popup and in a console.*/
+	function myfunction()
+	{
+	let a;
+	let b;
+	b = 5;
+	a =  3;
+	alert("Your value is"+" "+ a + b);
+	console.log(a);
+	}
+
+/*Task 2 - use a different naming convention and create a few variables of your choice and store values of different data types in it.*/
+	function namingConvention()
+	{
+		let a = 3;
+		let value1 = 4;
+		let firstName ="Anna Kim";
+		console.log(a);
+		console.log(firstName);
+	}
+
+/*Task 3 - Take 2 different inputs using prompt() and use string concatenation operator to show the results in the console*/
+	function stringConcat(){
+		let firstName = prompt("Enter your firstname") ;
+		let lastName = prompt("Enter your lastname");
+		let Age = prompt ('Your Age ??');
+		alert(firstName + lastName +" is "+ Age +" years old.");
+
+		console.log(firstName);
+		console.log(lastName);
+		console.log(Age);
+
+	}
+/*	Task 4: Show warnings and errors in the console*/
+
+
+	/*function errorShow()
+	{
+		let name1 = "hello world";
+		var name1 = 2;
+		console.log(name1); 
+	}*/
+
+/*	Task 5: Explore what is dynamically typed language, and why is js a dynamically typed language.*/
+
+
+</script>
+</html>
