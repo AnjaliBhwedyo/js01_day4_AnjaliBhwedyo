@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practise Level 2:</title>
+</head>
+<body>
+	<h3>Choose an operation :	</h3>
+	<button onclick="add();">Add</button> 
+	<button onclick="substract();">Substract</button> 
+	<button onclick="multiply();">Multiply</button> 
+	<button onclick="divide();">Divide</button> 
+
+	<br>
+	<div id="demo"></div>
+<script type="text/javascript">	
+ /*Task 1 - Perform addition, subtraction, multiplication, and division
+by taking input using the prompt() function and show all the results
+by concatenating it with a string like: sum is ... , product is ..
+*/
+function add(){
+	
+	let a = prompt("Enter the first number ");
+	let b = prompt("enter second number");
+	let sum = parseInt(a) + parseInt(b);
+	document.getElementById("demo").innerHTML= "Sum  is "+ sum;
+
+
+}
+function substract(){
+	
+	let a = prompt("Enter the first number ");
+	let b = prompt("enter second number");
+	let difference = parseInt(a) - parseInt(b);
+	document.getElementById("demo").innerHTML= "Sum  is "+ difference;
+
+
+}
+function multiply(){
+	
+	let a = prompt("Enter the  first number ");
+	let b = prompt("enter second number");
+	let product = parseInt(a) * parseInt(b);
+	document.getElementById("demo").innerHTML= "Product is  "+ product;
+
+
+}
+function divide(){
+	
+	let a = prompt("Enter the dividend ");
+	let b = prompt("enter divisor");
+	let result = parseInt(a) / parseInt(b);
+	document.getElementById("demo").innerHTML= "Quotient is "+ result;
+}
+
+
+
+/*Task 2 - Declare 5 different variables using let and 5 different
+variables using var but don't assign values to it and log all those
+variables in the console*/
+let a;
+let b ;
+let name ;
+let roll ;
+let age;
+var x ;
+var y;
+var z;
+console.log(a);
+console.log(x);
+
+
+/*Task 3 - Create a constant and try to create another constant with
+the same name and see what happens, fix the mistake if something
+goes wrong.*/
+
+
+const  g = 10;
+// Here x is 10
+
+{  
+const g = 2;
+// Here x is 2
+}
+
+//Uncaught SyntaxError: Missing initializer in const declaration
+
+
+console.log(g );
+//10
+
+/*Task 4: - Declare two variables using let on the same line without
+terminating the line and store true value in both the variables and
+perform addition and show the result on the console and try to
+analyze the code.*/
+let num = true; let num1 = true;
+let sum = num + num1;
+console.log(sum);// ans is 2 as true value is 1 .So 1+1 is 2; 
+
+
+
+</script>
+
+</body>
+</html>
