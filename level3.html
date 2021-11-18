@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Level 3</title>
+</head>
+<body>
+	<p>Click the button to parse different strings.</p>
+
+	<button onclick="myFunction()">Try it</button>
+<script type="">
+/*Task 1 - Explore parseFloat() function and pass integer like 1 or 2
+and show the result of it on the console */
+function myFunction() {
+  var a = parseFloat("10");
+  var b = parseFloat("10.00");
+  var c = parseFloat("10.33");
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+
+
+/*Task 2 - Use the + unary operator in a string that contains the
+number '999' and add 1 to it and show the output on the console.
+Note: the output should be 1000*/	
+	let a = "999";
+	let result= Number("999")+1;
+	console.log("using number function result is"+result); 	
+	let sum =parseInt( a) + 1;	
+	console.log("using parseInt ,result is "+ sum);
+
+
+/*Task 3 - Use the - unary operator to the string containing a number
+and show the message into the console*/
+    let a1= "999";
+	let result1 = Number("999") - 1;
+	console.log("using number function result is" +result1); 	
+	let sum1 =parseInt( a1) - 1;	
+	console.log("using parseInt ,result is "+ sum1);
+
+
+	/*Task 4: - Identify the data type of the value returned by typeof
+operator (Hint: you can test it on the console*/
+
+  console.log(typeof "Name" );
+  console.log(typeof 3.14 );
+  console.log(typeof NaN);
+  console.log(typeof false);
+  console.log(typeof [1,2,3,4] );
+  
+  console.log(typeof new Date() );
+  /*
+Task 5 - Store string using double-quote syntax and try to show
+something like Ram said, "Programming is a fun game"*/
+
+let string1= "Programming is fun game "
+alert(string1);
+</script>
+
+</body>
+</html>
